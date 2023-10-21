@@ -6,7 +6,7 @@
         ORG $300
 BELL    EQU $FBDD
 *
-START   JSR $FBDD	; Ring the Bell
+START   JSR BELL	; Ring the Bell
 END     RTS         ; Return
         CHK
 ********************************

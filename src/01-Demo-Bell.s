@@ -1,12 +1,12 @@
 ********************************
-*        01-Demo-Bell          *
+*         01-Demo-Bell         *
 ********************************
 *
 *
         ORG $300
 BELL    EQU $FBDD
 *
-START   JSR BELL	; Ring the Bell
+START   JSR BELL    ; Ring the Bell
 END     RTS         ; Return
         CHK
 ********************************

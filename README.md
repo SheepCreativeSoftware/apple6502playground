@@ -6,9 +6,11 @@ This is just a repo to store a bit of code that I played with for use with Apple
 [AppleWin](https://github.com/AppleWin/AppleWin) - AppleWin is a fully-featured emulator supporting different Apple II models and clones  
 [CiderPress](https://a2ciderpress.com/) - Disk Image Utility (To create and Manage Apple II Disk Images)  
 [Merlin Pro Assembler v2.43](https://macgui.com/downloads/?file_id=8140) - Assembly Editor with both ProDOS and DOS 3.3  
+[Merlin Pro Assembler v2.47](https://macgui.com/downloads/?file_id=8143) - Assembly Editor with both ProDOS and DOS 3.3 (Newer GUI of Editor)  
 
 ### Related Documents
-[Merlin 8/16 Manual](http://www.apple-iigs.info/doc/fichiers/merlin816.pdf) - Manual on how to use Merlin  
+[Merlin 8/16 Manual](https://gswv.apple2.org.za/a2zine/Docs/MerlinManual.txt) - TEXT Manual on how to use Merlin  
+[Merlin 8/16 Manual (Newer Version 2.45+)](http://www.apple-iigs.info/doc/fichiers/merlin816.pdf) - Manual on how to use Merlin  
 [Assembly Lines: The COmplete Book](https://archive.org/details/AssemblyLinesCompleteWagner) - Programming Guide to 6502 on the Apple II  
 [Apple DOS 3.3 - Tipps und Tricks](https://ia904602.us.archive.org/31/items/apple-dos-33-tips-tricks/AppleDOS33_Tips&Tricks.pdf) - Hilfe rund um Befehle in Apple DOS (German)  
 

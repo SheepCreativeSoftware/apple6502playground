@@ -1,0 +1,33 @@
+********************************
+*     07-Screen-Clear-KYBD     *
+********************************
+*
+*
+        ORG $300
+PTR     EQU $06     ; Pointer
+CHAR    EQU $08     ;
+KYBD    EQU $C000   ; Keyboard buffer
+STROBE  EQU $C010   ; Reste keyboard buffer
+*
+ENTRY   LDA #$04    ; Addres of Screen is $400-$4FF
+        STA PTR+1   ;
+        LDY #$00    ;
+        STY PTR     ;
+* Sets PTR (6, 7) to $400
+READ    LDA KYBD    ;
+        CMP #$80    ; Key pressed?
+        BCC READ    ; No, try again
+        STA STROBE  ; clear keyboard buffer
+        STA CHAR    ; store char from keyboard
+CLEAR   LDY #$00    ; 
+        LDA CHAR    ; Fill display with char
+LOOP    STA (PTR),Y ; Store value to pointer address
+        INY         ;
+        BNE LOOP    ; LOOP until overflow
+NXT     INC PTR+1   ;
+        LDA PTR+1   ;
+        CMP #$08    ;
+        BCC CLEAR   ;
+AGAIN   JMP ENTRY   ;
+EXIT    RTS
+        CHK
